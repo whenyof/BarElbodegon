@@ -3,22 +3,40 @@
    ======================================== */
 
 :root {
-    --primary-color: #c59764;
-    --primary-dark: #a67c52;
-    --primary-light: #d4b896;
-    --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
-    --accent-light: #f39c12;
-    --text-dark: #2c3e50;
-    --text-light: #7f8c8d;
-    --bg-light: #f8f9fa;
-    --bg-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    /* Colores cálidos - Madera, Vino, Beige */
+    --primary-color: #b8865b; /* Madera dorada cálida */
+    --primary-dark: #8b6f47; /* Madera oscura */
+    --primary-light: #d4a574; /* Madera clara */
+    --wine-color: #8b2635; /* Vino tinto */
+    --wine-dark: #6b1d28; /* Vino oscuro */
+    --beige-light: #f5f1e8; /* Beige muy claro */
+    --beige-medium: #e8e0d3; /* Beige medio */
+    --beige-dark: #d4c4b0; /* Beige oscuro */
+    
+    /* Colores secundarios */
+    --secondary-color: #3d2f1f; /* Marrón oscuro */
+    --accent-color: #c94d4d; /* Rojo vino suave */
+    --accent-light: #d67a5a; /* Terracota */
+    
+    /* Texto */
+    --text-dark: #2c2416; /* Marrón muy oscuro */
+    --text-light: #6b5d4f; /* Marrón medio */
+    
+    /* Fondos */
+    --bg-light: var(--beige-light);
+    --bg-gradient: linear-gradient(135deg, #f5f1e8 0%, #e8e0d3 100%);
     --white: #ffffff;
-    --shadow: 0 4px 20px rgba(0,0,0,0.1);
-    --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
-    --shadow-strong: 0 15px 50px rgba(0,0,0,0.2);
+    
+    /* Sombras suaves y cálidas */
+    --shadow: 0 4px 20px rgba(44, 36, 22, 0.08);
+    --shadow-hover: 0 8px 30px rgba(44, 36, 22, 0.12);
+    --shadow-strong: 0 15px 50px rgba(44, 36, 22, 0.15);
+    
+    /* Bordes */
     --border-radius: 12px;
     --border-radius-lg: 20px;
+    
+    /* Transiciones */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -34,12 +52,58 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* Mobile optimizations */
+    -webkit-tap-highlight-color: rgba(184, 134, 91, 0.2);
+    touch-action: manipulation;
+}
+
+/* Prevent layout shifts */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Prevent layout shifts */
+* {
+    box-sizing: border-box;
+}
+
+/* Ensure smooth rendering */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 /* ========================================

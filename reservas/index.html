@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- SEO Meta Tags -->
+    <title>Reservar Mesa - El Bodegón de La Collada | Bar Restaurante cerca de Gijón</title>
+    <meta name="description" content="Reserva tu mesa en El Bodegón de La Collada. Bar restaurante tradicional cerca de Gijón. Comidas solo fines de semana. Reserva fácil y rápida.">
+    <meta name="keywords" content="reservar mesa Gijón, reservas bar restaurante Asturias, reservar restaurante cerca de Gijón, reserva comida tradicional Asturias">
+    <link rel="canonical" href="https://barelbodegon.es/reservas/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://barelbodegon.es/reservas/">
+    <meta property="og:title" content="Reservar Mesa - El Bodegón de La Collada">
+    <meta property="og:description" content="Reserva tu mesa en El Bodegón de La Collada. Bar restaurante tradicional cerca de Gijón.">
+    <meta property="og:image" content="https://barelbodegon.es/images/logos/logo-main.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <style>
+        /* Reservation Form Styles */
+        .reservation-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+        
+        .reservation-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .reservation-form {
+            background: var(--bg-gradient);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(197, 151, 100, 0.2);
+            border-radius: var(--border-radius);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--white);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 480px) {
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                font-size: 16px; /* Prevents zoom on iOS */
+                padding: 0.9rem;
+                min-height: 44px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .reservation-form {
+                padding: 1.5rem;
+            }
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(197, 151, 100, 0.1);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .reservation-info {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .reservation-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .reservation-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .reservation-info li {
+            padding: 0.75rem 0;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .reservation-info li i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+        
+        .whatsapp-note {
+            background: #25D366;
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .whatsapp-note i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .whatsapp-note p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .reservation-form {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">El Bodegón</a>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Inicio</a></li>
+                    <li><a href="/sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="/carta" class="nav-link">Carta</a></li>
+                    <li><a href="/galeria" class="nav-link">Galería</a></li>
+                    <li><a href="/ubicacion" class="nav-link">Ubicación</a></li>
+                </ul>
+                <div class="nav-reserve-wrapper">
+                    <a href="/reservas" class="btn btn-reserve active">Reservar</a>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">📅 Reserva tu Mesa</div>
+                <h1>Reservar en El Bodegón</h1>
+                <p>Reserva tu mesa para disfrutar de la mejor comida casera asturiana cerca de Gijón. Comidas tradicionales solo sábados y domingos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Info -->
+    <section class="reservation-section" data-aos="fade-up">
+        <div class="container">
+            <div class="reservation-container">
+                <div class="reservation-info" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Información Importante</h3>
+                    <ul>
+                        <li><i class="fas fa-calendar-alt"></i> <strong>Comidas:</strong> Solo sábados y domingos</li>
+                        <li><i class="fas fa-clock"></i> <strong>Horarios:</strong> Lunes a Jueves 13:00 - Cierre | Viernes a Domingo 11:00 - Cierre</li>
+                        <li><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:985920751" style="color: var(--primary-color);">985 920 751</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <strong>Ubicación:</strong> Carretera 40A, 33519 Ceñal, Asturias</li>
+                        <li><i class="fas fa-info-circle"></i> <strong>Nota:</strong> Te recomendamos reservar con antelación, especialmente los fines de semana</li>
+                    </ul>
+                </div>
+
+                <!-- Reservation Form -->
+                <div class="reservation-form" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="section-title" style="margin-bottom: 2rem;">Formulario de Reserva</h2>
+                    <form id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fecha"><i class="fas fa-calendar"></i> Fecha *</label>
+                                <input type="date" id="fecha" name="fecha" required min="">
+                            </div>
+                            <div class="form-group">
+                                <label for="hora"><i class="fas fa-clock"></i> Hora *</label>
+                                <select id="hora" name="hora" required>
+                                    <option value="">Selecciona una hora</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="personas"><i class="fas fa-users"></i> Número de Personas *</label>
+                                <select id="personas" name="personas" required>
+                                    <option value="">Selecciona</option>
+                                    <option value="1">1 persona</option>
+                                    <option value="2">2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                    <option value="5">5 personas</option>
+                                    <option value="6">6 personas</option>
+                                    <option value="7">7 personas</option>
+                                    <option value="8">8 personas</option>
+                                    <option value="9+">9 o más personas</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono"><i class="fas fa-phone"></i> Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="985 123 456" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nombre"><i class="fas fa-user"></i> Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comentarios"><i class="fas fa-comment"></i> Comentarios o Peticiones Especiales</label>
+                            <textarea id="comentarios" name="comentarios" placeholder="Alergias, preferencias, celebraciones especiales..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem; font-size: 1.1rem;">
+                            <i class="fab fa-whatsapp"></i> Enviar Reserva por WhatsApp
+                        </button>
+                        
+                        <div class="whatsapp-note">
+                            <i class="fab fa-whatsapp"></i>
+                            <p><strong>Tu reserva se enviará por WhatsApp</strong><br>Recibirás confirmación inmediata</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>El Bodegón</h4>
+                    <p>Bar restaurante tradicional en La Collada, Asturias. Más de 60 años de tradición y hospitalidad familiar. A 15 minutos de Gijón.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Jueves: 13:00 - Cierre<br>
+                    Viernes a Domingo: 11:00 - Cierre<br>
+                    <strong>Comidas: Solo Sábados y Domingos</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <p>
+                        <a href="/carta">Carta</a><br>
+                        <a href="/galeria">Galería</a><br>
+                        <a href="/sobre-nosotros">Sobre Nosotros</a><br>
+                        <a href="/ubicacion">Ubicación</a><br>
+                        <a href="/reservas">Reservas</a><br>
+                        <a href="/contacto">Contacto</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p>
+                        <a href="/aviso-legal">Aviso Legal</a><br>
+                        <a href="/privacidad">Política de Privacidad</a><br>
+                        <a href="/politica-de-cookies">Política de Cookies</a><br>
+                        <a href="/declaracion-de-accesibilidad">Declaración de Accesibilidad</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 El Bodegón de La Collada. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../js/main.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Set minimum date to today
+        const fechaInput = document.getElementById('fecha');
+        const today = new Date().toISOString().split('T')[0];
+        fechaInput.setAttribute('min', today);
+
+        // WhatsApp number (replace with actual number)
+        const whatsappNumber = '34985920751'; // Format: country code + number without + or spaces
+
+        // Form submission
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const fecha = formData.get('fecha');
+            const hora = formData.get('hora');
+            const personas = formData.get('personas');
+            const nombre = formData.get('nombre');
+            const telefono = formData.get('telefono');
+            const comentarios = formData.get('comentarios') || 'Sin comentarios';
+            
+            // Format date
+            const fechaFormateada = new Date(fecha).toLocaleDateString('es-ES', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Create WhatsApp message
+            const mensaje = `🍽️ *RESERVA - El Bodegón de La Collada*
+
+📅 *Fecha:* ${fechaFormateada}
+🕐 *Hora:* ${hora}
+👥 *Personas:* ${personas}
+👤 *Nombre:* ${nombre}
+📞 *Teléfono:* ${telefono}
+💬 *Comentarios:* ${comentarios}
+
+Por favor, confirma esta reserva. ¡Gracias!`;
+            
+            // Encode message for URL
+            const mensajeEncoded = encodeURIComponent(mensaje);
+            
+            // Open WhatsApp
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${mensajeEncoded}`;
+            window.open(whatsappUrl, '_blank');
+            
+            // Show success message
+            alert('¡Redirigiendo a WhatsApp! Por favor, envía el mensaje para confirmar tu reserva.');
+        });
+    </script>
+</body>
+</html>
+

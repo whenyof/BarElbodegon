@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage - Highest Priority -->
+    <url>
+        <loc>https://barelbodegon.es/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://barelbodegon.es/images/logos/logo-main.png</image:loc>
+            <image:title>El Bodegón de La Collada - Logo</image:title>
+            <image:caption>Logo del bar restaurante tradicional asturiano El Bodegón de La Collada</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://barelbodegon.es/images/hero/hero-main.jpg</image:loc>
+            <image:title>Interior del bar El Bodegón</image:title>
+            <image:caption>Interior acogedor del bar tradicional asturiano El Bodegón de La Collada</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Carta Page - High Priority -->
+    <url>
+        <loc>https://barelbodegon.es/carta/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Reservas Page - High Priority -->
+    <url>
+        <loc>https://barelbodegon.es/reservas/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- About Page - High Priority -->
+    <url>
+        <loc>https://barelbodegon.es/sobre-nosotros/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Ubicación Page - High Priority -->
+    <url>
+        <loc>https://barelbodegon.es/ubicacion/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Gallery Page - Medium Priority -->
+    <url>
+        <loc>https://barelbodegon.es/galeria/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://barelbodegon.es/images/gallery/ambiente-familiar.jpg</image:loc>
+            <image:title>Ambiente familiar del bar</image:title>
+            <image:caption>Ambiente familiar y acogedor del bar El Bodegón de La Collada</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://barelbodegon.es/images/gallery/comida-tradicional.jpg</image:loc>
+            <image:title>Comida tradicional asturiana</image:title>
+            <image:caption>Platos tradicionales asturianos del bar El Bodegón</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://barelbodegon.es/images/gallery/interior-bar.jpg</image:loc>
+            <image:title>Interior del bar tradicional</image:title>
+            <image:caption>Interior del bar tradicional asturiano El Bodegón de La Collada</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Contact Page - Medium Priority -->
+    <url>
+        <loc>https://barelbodegon.es/contacto/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Legal Pages - Low Priority -->
+    <url>
+        <loc>https://barelbodegon.es/aviso-legal.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://barelbodegon.es/politica-de-privacidad.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://barelbodegon.es/politica-de-cookies.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://barelbodegon.es/declaracion-de-accesibilidad.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Attractions Page - Medium Priority -->
+    <url>
+        <loc>https://barelbodegon.es/atractivos-de-la-zona/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+</urlset>

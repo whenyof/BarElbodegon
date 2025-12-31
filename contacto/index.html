@@ -6,45 +6,51 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
     <!-- SEO Meta Tags Optimizados para SEO Local -->
-    <title>Galería de Fotos - El Bodegón de La Collada | Bar Restaurante cerca de Gijón</title>
-    <meta name="description" content="Galería de fotos de El Bodegón de La Collada. Descubre nuestro ambiente rural asturiano, platos tradicionales y comida casera cerca de Gijón. Fotos del bar restaurante tradicional.">
-    <meta name="keywords" content="galería bar restaurante cerca de Gijón, fotos bar asturiano, ambiente rural Asturias, restaurante tradicional cerca de Gijón, fotos comida casera Asturias, galería bar La Collada, fotos restaurante tradicional">
-    <link rel="canonical" href="https://barelbodegon.es/galeria/">
+    <title>Contacto - El Bodegón de La Collada | Bar Restaurante cerca de Gijón</title>
+    <meta name="description" content="Contacta con El Bodegón de La Collada. Bar restaurante tradicional cerca de Gijón. Teléfono: 985 920 751. Carretera 40A, 33519 Ceñal, Asturias. A 15 minutos de Gijón.">
+    <meta name="keywords" content="contacto bar restaurante cerca de Gijón, teléfono bar La Collada, dirección bar cerca de Gijón, reservas bar Asturias, contacto restaurante tradicional, bar rural cerca de Gijón">
+    <link rel="canonical" href="https://barelbodegon.es/contacto/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://barelbodegon.es/galeria/">
-    <meta property="og:title" content="Galería - El Bodegón de La Collada | Fotos del Bar Restaurante">
-    <meta property="og:description" content="Descubre El Bodegón de La Collada a través de nuestra galería. Ambiente rural asturiano y platos tradicionales.">
+    <meta property="og:url" content="https://barelbodegon.es/contacto/">
+    <meta property="og:title" content="Contacto - El Bodegón de La Collada | Bar Restaurante Asturiano">
+    <meta property="og:description" content="Contacta con El Bodegón de La Collada. Bar restaurante tradicional asturiano en La Collada, Asturias.">
     <meta property="og:image" content="https://barelbodegon.es/images/logos/logo-main.png">
     <meta property="og:site_name" content="El Bodegón de La Collada">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://barelbodegon.es/galeria/">
-    <meta property="twitter:title" content="Galería - El Bodegón de La Collada">
-    <meta property="twitter:description" content="Descubre El Bodegón de La Collada a través de nuestra galería. Ambiente rural asturiano y platos tradicionales.">
+    <meta property="twitter:url" content="https://barelbodegon.es/contacto/">
+    <meta property="twitter:title" content="Contacto - El Bodegón de La Collada">
+    <meta property="twitter:description" content="Contacta con El Bodegón de La Collada. Bar restaurante tradicional asturiano en La Collada, Asturias.">
     <meta property="twitter:image" content="https://barelbodegon.es/images/logos/logo-main.png">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ImageGallery",
-        "name": "Galería - El Bodegón de La Collada",
-        "description": "Galería de fotos del bar restaurante tradicional asturiano",
-        "url": "https://barelbodegon.es/galeria/",
-        "provider": {
+        "@type": "ContactPage",
+        "name": "Contacto - El Bodegón de La Collada",
+        "description": "Información de contacto del bar restaurante tradicional asturiano",
+        "url": "https://barelbodegon.es/contacto/",
+        "mainEntity": {
             "@type": "Restaurant",
             "name": "El Bodegón de La Collada",
+            "telephone": "+34985920751",
+            "email": "barelbodegon@hotmail.com",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "La Collada Ceñal, 40",
-                "addressLocality": "La Collada",
+                "streetAddress": "Carretera 40A",
+                "addressLocality": "Ceñal",
                 "addressRegion": "Asturias",
                 "postalCode": "33519",
                 "addressCountry": "ES"
-            }
+            },
+            "openingHours": [
+                "Mo-Th 13:00-23:00",
+                "Fr-Su 11:00-23:00"
+            ]
         }
     }
     </script>
@@ -515,46 +521,10 @@ body {
     opacity: 1;
 }
 
-        .gallery-overlay i {
-            color: var(--white);
-            font-size: 2rem;
-        }
-        
-        /* Gallery Modal */
-        .gallery-modal {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .modal-content {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-            border-radius: var(--border-radius);
-        }
-        
-        .close-modal {
-            position: absolute;
-            top: 20px;
-            right: 35px;
-            color: var(--white);
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-        
-        .close-modal:hover {
-            color: var(--primary-color);
-        }
+.gallery-overlay i {
+    color: var(--white);
+    font-size: 2rem;
+}
 
 /* Stats Section */
 .stats-section {
@@ -776,11 +746,70 @@ body {
     height: 400px;
 }
 
-.map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Hours Section */
+        .hours-section {
+            padding: 5rem 0;
+            background: var(--bg-gradient);
+            position: relative;
+        }
+        
+        .hours-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23c59764" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23c59764" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23c59764" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="%23c59764" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="%23c59764" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        
+        .hours-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .hours-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition-slow);
+            border: 1px solid rgba(197, 151, 100, 0.1);
+        }
+        
+        .hours-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .hours-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .hours-card p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
 
 /* Footer */
 .footer {
@@ -889,7 +918,7 @@ body:not(.loaded)::before {
     .nav-menu {
         display: none;
     }
-    
+				
     .mobile-menu-btn {
         display: block;
     }
@@ -1013,7 +1042,7 @@ body:not(.loaded)::before {
                     <li><a href="/" class="nav-link">Inicio</a></li>
                     <li><a href="/sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="/carta" class="nav-link">Carta</a></li>
-                    <li><a href="/galeria" class="nav-link active">Galería</a></li>
+                    <li><a href="/galeria" class="nav-link">Galería</a></li>
                     <li><a href="/ubicacion" class="nav-link">Ubicación</a></li>
                 </ul>
                 <div class="nav-reserve-wrapper">
@@ -1030,124 +1059,76 @@ body:not(.loaded)::before {
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-subtitle">📸 Descubre Nuestro Ambiente</div>
-                <h1>Galería de Fotos</h1>
-                <p>Sumérgete en la atmósfera única de El Bodegón de La Collada, el mejor bar restaurante cerca de Gijón. Descubre nuestro ambiente rural asturiano, nuestros platos tradicionales y los momentos especiales que vivimos cada día.</p>
+                <div class="hero-subtitle">📍 Ven a Visitarnos</div>
+                <h1>Contacto</h1>
+                <p>Estamos ubicados en un enclave privilegiado en La Collada, Asturias, a solo <strong>15 minutos de Gijón</strong>. Ven a disfrutar de nuestra hospitalidad tradicional asturiana y de los sabores auténticos de nuestra cocina casera.</p>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery-section" data-aos="fade-up">
+    <!-- Contact Section -->
+    <section class="contact-section" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Nuestra Galería</h2>
-            
-            <!-- Gallery Filters -->
-            <div class="gallery-filters" data-aos="fade-up" data-aos-delay="200">
-                <button class="filter-btn active" data-filter="all">Todas</button>
-                <button class="filter-btn" data-filter="interior">Interior</button>
-                <button class="filter-btn" data-filter="comida">Comida</button>
-                <button class="filter-btn" data-filter="ambiente">Ambiente</button>
-                <button class="filter-btn" data-filter="exterior">Exterior</button>
-            </div>
-            
-            <!-- Gallery Grid -->
-            <div class="gallery-grid">
-                <div class="gallery-item interior" data-aos="fade-up" data-aos-delay="300">
-                    <img src="../images/hero/hero-main.jpg" alt="Interior del bar El Bodegón">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Información de Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Dirección</h4>
+                            <p><a href="https://www.google.com/maps/dir//Bar+El+Bodegn+40A+33519+Ceal+Asturias/@43.4334368,-5.612376,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0xd36643024d586c7:0x6760953b03dd3e90" target="_blank">Carretera 40A, 33519 Ceñal, Asturias</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:985920751">985 920 751</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:barelbodegon@hotmail.com">barelbodegon@hotmail.com</a></p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="gallery-item comida" data-aos="fade-up" data-aos-delay="400">
-                    <img src="wp-content/uploads/2024/07/16.png" alt="Fabada asturiana tradicional">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item ambiente" data-aos="fade-up" data-aos-delay="500">
-                    <img src="wp-content/uploads/2024/07/17.png" alt="Ambiente familiar del bar">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item exterior" data-aos="fade-up" data-aos-delay="600">
-                    <img src="wp-content/uploads/2024/07/18.png" alt="Exterior del bar en La Collada">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item comida" data-aos="fade-up" data-aos-delay="700">
-                    <img src="wp-content/uploads/2024/07/19.png" alt="Tortos asturianos">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item interior" data-aos="fade-up" data-aos-delay="800">
-                    <img src="wp-content/uploads/2024/07/20.png" alt="Barra del bar tradicional">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item ambiente" data-aos="fade-up" data-aos-delay="900">
-                    <img src="wp-content/uploads/2024/07/21.png" alt="Mesa con comida tradicional">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item exterior" data-aos="fade-up" data-aos-delay="1000">
-                    <img src="wp-content/uploads/2024/07/22.png" alt="Vista de La Collada">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item comida" data-aos="fade-up" data-aos-delay="1100">
-                    <img src="wp-content/uploads/2024/07/23.png" alt="Cocido montañés">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
+                <div class="map-container" data-aos="fade-left" data-aos-delay="300">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.123456789!2d-5.612376!3d43.4334368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd36643024d586c7%3A0x6760953b03dd3e90!2sBar%20El%20Bodeg%C3%B3n!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section" data-aos="fade-up">
+    <!-- Hours Section -->
+    <section class="hours-section" data-aos="fade-up">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-number">60+</div>
-                    <div class="stat-label">Años de Tradición</div>
-                </div>
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-number">1000+</div>
-                    <div class="stat-label">Clientes Satisfechos</div>
-                </div>
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Platos Tradicionales</div>
-                </div>
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="stat-number">20+</div>
-                    <div class="stat-label">Especialidades de la Casa</div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Horarios de Apertura</h2>
+            <div class="hours-content">
+                <div class="hours-grid">
+                    <div class="hours-card" data-aos="fade-up" data-aos-delay="200">
+                        <h4>Lunes a Jueves</h4>
+                        <p>13:00 - Cierre</p>
+                    </div>
+                    
+                    <div class="hours-card" data-aos="fade-up" data-aos-delay="300">
+                        <h4>Viernes a Domingo</h4>
+                        <p>11:00 - Cierre</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Gallery Modal -->
-    <div id="gallery-modal" class="gallery-modal">
-        <span class="close-modal" id="close-modal">&times;</span>
-        <img class="modal-content" id="modal-image">
-    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -1251,66 +1232,6 @@ body:not(.loaded)::before {
         // Add loading animation
         window.addEventListener('load', function() {
             document.body.classList.add('loaded');
-        });
-
-        // Gallery filter functionality
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const galleryItems = document.querySelectorAll('.gallery-item');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const filter = this.getAttribute('data-filter');
-                
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-                this.classList.add('active');
-                
-                // Filter gallery items
-                galleryItems.forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.style.display = 'block';
-                        item.style.animation = 'fadeInUp 0.5s ease-out';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Gallery modal functionality
-        const modal = document.getElementById('gallery-modal');
-        const modalImage = document.getElementById('modal-image');
-        const closeModal = document.getElementById('close-modal');
-
-        galleryItems.forEach(item => {
-            item.addEventListener('click', function() {
-                const img = this.querySelector('img');
-                modalImage.src = img.src;
-                modalImage.alt = img.alt;
-                modal.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
-            });
-        });
-
-        closeModal.addEventListener('click', function() {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
-
-        modal.addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Keyboard navigation for modal
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && modal.style.display === 'block') {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
         });
     </script>
 </body>

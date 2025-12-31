@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- SEO Meta Tags -->
+    <title>Ubicación - El Bodegón de La Collada | Cómo Llegar | Bar cerca de Gijón</title>
+    <meta name="description" content="Cómo llegar a El Bodegón de La Collada. Bar restaurante tradicional a 15 minutos de Gijón, 15 minutos de Siero y 20 minutos de Oviedo. Dirección y mapa interactivo.">
+    <meta name="keywords" content="cómo llegar El Bodegón La Collada, bar restaurante cerca de Gijón, dirección bar Asturias, mapa restaurante cerca de Gijón, ubicación bar La Collada">
+    <link rel="canonical" href="https://barelbodegon.es/ubicacion/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://barelbodegon.es/ubicacion/">
+    <meta property="og:title" content="Ubicación - El Bodegón de La Collada | Cómo Llegar">
+    <meta property="og:description" content="Cómo llegar a El Bodegón de La Collada. Bar restaurante tradicional a 15 minutos de Gijón.">
+    <meta property="og:image" content="https://barelbodegon.es/images/logos/logo-main.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <style>
+        .location-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+        
+        .location-info {
+            background: var(--bg-gradient);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+        
+        .location-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .location-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .location-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .location-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .location-card h4 i {
+            color: var(--primary-color);
+        }
+        
+        .location-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .location-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .location-card a:hover {
+            color: var(--primary-dark);
+        }
+        
+        .directions-section {
+            padding: 5rem 0;
+            background: var(--bg-gradient);
+        }
+        
+        .directions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .direction-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            transition: var(--transition-slow);
+        }
+        
+        .direction-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .direction-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .direction-card h4 i {
+            font-size: 2rem;
+        }
+        
+        .direction-card .time {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+        
+        .direction-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .direction-card .route-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .direction-card .route-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .map-container {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-strong);
+            height: 500px;
+            margin-top: 3rem;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">El Bodegón</a>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Inicio</a></li>
+                    <li><a href="/sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="/carta" class="nav-link">Carta</a></li>
+                    <li><a href="/galeria" class="nav-link">Galería</a></li>
+                    <li><a href="/ubicacion" class="nav-link active">Ubicación</a></li>
+                </ul>
+                <div class="nav-reserve-wrapper">
+                    <a href="/reservas" class="btn btn-reserve">Reservar</a>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">📍 Cómo Llegar</div>
+                <h1>Nuestra Ubicación</h1>
+                <p>Encuéntranos en un enclave privilegiado en La Collada, Asturias. Perfectamente situados para quienes buscan el mejor bar restaurante cerca de Gijón, Siero u Oviedo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Info Section -->
+    <section class="location-section" data-aos="fade-up">
+        <div class="container">
+            <div class="location-info" data-aos="fade-up" data-aos-delay="100">
+                <h3>Información de Ubicación</h3>
+                <div class="location-details">
+                    <div class="location-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Dirección</h4>
+                        <p>
+                            <strong>Carretera 40A</strong><br>
+                            33519 Ceñal, La Collada<br>
+                            Asturias, España
+                        </p>
+                        <a href="https://www.google.com/maps/dir//Bar+El+Bodegn+40A+33519+Ceal+Asturias/@43.4334368,-5.612376,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0xd36643024d586c7:0x6760953b03dd3e90" target="_blank">
+                            Ver en Google Maps <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="location-card">
+                        <h4><i class="fas fa-phone"></i> Teléfono</h4>
+                        <p>
+                            <a href="tel:985920751">985 920 751</a>
+                        </p>
+                    </div>
+                    
+                    <div class="location-card">
+                        <h4><i class="fas fa-envelope"></i> Email</h4>
+                        <p>
+                            <a href="mailto:barelbodegon@hotmail.com">barelbodegon@hotmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directions Section -->
+    <section class="directions-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Cómo Llegar desde las Principales Ciudades</h2>
+            <div class="directions-grid">
+                <div class="direction-card" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fas fa-city"></i> Desde Gijón</h4>
+                    <div class="time">15 minutos</div>
+                    <p>Perfectamente conectado con Gijón. Ideal para una escapada gastronómica rápida desde la ciudad. El mejor bar restaurante cerca de Gijón para disfrutar de comida casera tradicional.</p>
+                    <a href="https://www.google.com/maps/dir/Gij%C3%B3n,+Asturias/43.4334368,-5.612376/" target="_blank" class="route-btn" rel="noopener noreferrer">
+                        <i class="fas fa-route"></i> Ver Ruta
+                    </a>
+                </div>
+                
+                <div class="direction-card" data-aos="fade-up" data-aos-delay="300">
+                    <h4><i class="fas fa-city"></i> Desde Siero</h4>
+                    <div class="time">15 minutos</div>
+                    <p>A solo 15 minutos de Pola de Siero. Perfecto para comidas familiares y celebraciones. Un bar restaurante tradicional con la mejor comida casera asturiana.</p>
+                    <a href="https://www.google.com/maps/dir/Pola+de+Siero,+Siero,+Asturias/43.4334368,-5.612376/" target="_blank" class="route-btn" rel="noopener noreferrer">
+                        <i class="fas fa-route"></i> Ver Ruta
+                    </a>
+                </div>
+                
+                <div class="direction-card" data-aos="fade-up" data-aos-delay="400">
+                    <h4><i class="fas fa-city"></i> Desde Oviedo</h4>
+                    <div class="time">25 minutos</div>
+                    <p>Un plan perfecto para el fin de semana desde Oviedo. Disfruta de la auténtica gastronomía asturiana en un ambiente rural único. El mejor restaurante tradicional cerca de Oviedo.</p>
+                    <a href="https://www.google.com/maps/dir/Oviedo/43.4334368,-5.612376/" target="_blank" class="route-btn" rel="noopener noreferrer">
+                        <i class="fas fa-route"></i> Ver Ruta
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="map-container" data-aos="fade-up" data-aos-delay="500">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.123456789!2d-5.612376!3d43.4334368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd36643024d586c7%3A0x6760953b03dd3e90!2sBar%20El%20Bodeg%C3%B3n!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de El Bodegón de La Collada">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>El Bodegón</h4>
+                    <p>Bar restaurante tradicional en La Collada, Asturias. Más de 60 años de tradición y hospitalidad familiar. A 15 minutos de Gijón.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Jueves: 13:00 - Cierre<br>
+                    Viernes a Domingo: 11:00 - Cierre<br>
+                    <strong>Comidas: Solo Sábados y Domingos</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <p>
+                        <a href="/carta">Carta</a><br>
+                        <a href="/galeria">Galería</a><br>
+                        <a href="/sobre-nosotros">Sobre Nosotros</a><br>
+                        <a href="/ubicacion">Ubicación</a><br>
+                        <a href="/reservas">Reservas</a><br>
+                        <a href="/contacto">Contacto</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p>
+                        <a href="/aviso-legal">Aviso Legal</a><br>
+                        <a href="/privacidad">Política de Privacidad</a><br>
+                        <a href="/politica-de-cookies">Política de Cookies</a><br>
+                        <a href="/declaracion-de-accesibilidad">Declaración de Accesibilidad</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 El Bodegón de La Collada. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../js/main.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
+

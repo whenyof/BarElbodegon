@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://barelbodegon.es/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow all important pages and directories
+Allow: /
+Allow: /carta/
+Allow: /reservas/
+Allow: /sobre-nosotros/
+Allow: /galeria/
+Allow: /ubicacion/
+Allow: /contacto/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Legacy URLs (redirects will be handled)
+Allow: /nuestra-carta.html
+Allow: /sobre-nosotros.html
+Allow: /galeria.html
+Allow: /contacto.html
+
+# Block unnecessary files
+Disallow: *.pdf$
+Disallow: *.doc$
+Disallow: *.docx$
+Disallow: *.xls$
+Disallow: *.xlsx$
