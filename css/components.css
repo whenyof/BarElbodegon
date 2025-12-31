@@ -49,6 +49,8 @@
     color: var(--primary-color);
     text-decoration: none;
     transition: var(--transition);
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .logo:hover {
@@ -78,9 +80,13 @@
     gap: 1rem;
 }
 
-.btn.btn-reserve,
+/* Botón Reservar - Estilos globales con máxima especificidad */
 a.btn.btn-reserve,
-.btn-reserve {
+.btn.btn-reserve,
+a.btn-reserve,
+.btn-reserve,
+.nav-reserve-wrapper .btn,
+.nav-reserve-wrapper a.btn {
     white-space: nowrap !important;
     font-size: 0.95rem !important;
     padding: 0.6rem 1.25rem !important;
@@ -93,21 +99,76 @@ a.btn.btn-reserve,
     border-radius: var(--border-radius) !important;
     transition: var(--transition) !important;
     display: inline-block !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
 }
 
-.btn.btn-reserve:hover,
 a.btn.btn-reserve:hover,
-.btn-reserve:hover {
+.btn.btn-reserve:hover,
+a.btn-reserve:hover,
+.btn-reserve:hover,
+.nav-reserve-wrapper .btn:hover,
+.nav-reserve-wrapper a.btn:hover {
     background: var(--wine-dark) !important;
     border-color: var(--wine-dark) !important;
     transform: translateY(-2px) !important;
     box-shadow: var(--shadow-hover) !important;
     color: var(--white) !important;
+    text-decoration: none !important;
 }
 
-.btn.btn-reserve.active,
+a.btn.btn-reserve:active,
+.btn.btn-reserve:active,
+a.btn-reserve:active,
+.btn-reserve:active,
+.nav-reserve-wrapper .btn:active,
+.nav-reserve-wrapper a.btn:active {
+    background: var(--wine-dark) !important;
+    border-color: var(--wine-dark) !important;
+    color: var(--white) !important;
+    transform: translateY(0) !important;
+}
+
 a.btn.btn-reserve.active,
-.btn-reserve.active {
+.btn.btn-reserve.active,
+a.btn-reserve.active,
+.btn-reserve.active,
+.nav-reserve-wrapper .btn.active,
+.nav-reserve-wrapper a.btn.active {
+    background: var(--wine-dark) !important;
+    border-color: var(--wine-dark) !important;
+    color: var(--white) !important;
+}
+
+/* Override cualquier estilo de .btn que pueda interferir */
+a.btn.btn-reserve.btn-primary,
+.btn.btn-reserve.btn-primary,
+.nav-reserve-wrapper a.btn.btn-primary,
+.nav-reserve-wrapper .btn.btn-primary {
+    background: var(--wine-color) !important;
+    border-color: var(--wine-color) !important;
+    color: var(--white) !important;
+}
+
+a.btn.btn-reserve.btn-primary:hover,
+.btn.btn-reserve.btn-primary:hover,
+.nav-reserve-wrapper a.btn.btn-primary:hover,
+.nav-reserve-wrapper .btn.btn-primary:hover {
+    background: var(--wine-dark) !important;
+    border-color: var(--wine-dark) !important;
+    color: var(--white) !important;
+}
+
+/* Asegurar que el botón reservar siempre tenga el estilo correcto */
+.nav-reserve-wrapper a,
+.nav-reserve-wrapper .btn {
+    background: var(--wine-color) !important;
+    border-color: var(--wine-color) !important;
+    color: var(--white) !important;
+}
+
+.nav-reserve-wrapper a:hover,
+.nav-reserve-wrapper .btn:hover {
     background: var(--wine-dark) !important;
     border-color: var(--wine-dark) !important;
     color: var(--white) !important;
